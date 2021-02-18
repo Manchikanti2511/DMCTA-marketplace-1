@@ -1,0 +1,12 @@
+{
+  "name": "dmctanew",
+  "displayName": "dmctanew",
+  "expo": {
+    "name": "dmctanew",
+    "slug": "dmctanew",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
