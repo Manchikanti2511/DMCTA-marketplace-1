@@ -2,9 +2,14 @@ import React from 'react';
 import {View,Text,Pressable,Button,StyleSheet} from 'react-native';
 import styles from './styles_info';
 import Inputs from './inputs.js'
+import TopBar from './top_bar.js';
+import { StatusBar } from 'react-native';
+
 const fill_more_info = () => {
     return (
+        
         <View style={styles_index_info.container}>
+           <TopBar></TopBar>
         <Text style={styles_index_info.title}>More Details</Text>
        <Inputs />
        </View>
@@ -13,11 +18,13 @@ const fill_more_info = () => {
  export default fill_more_info
  
  const styles_index_info=StyleSheet.create({
+    
     container: {
-        paddingTop: 23,
-        margin:'10%',
+        
+        
         alignItems:'center',
         justifyContent:'center',
+        marginTop: StatusBar.currentHeight,
      },
      input: {
         margin: 15,

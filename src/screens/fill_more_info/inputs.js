@@ -31,28 +31,28 @@ class Inputs extends Component{
      render(){
          return(
              <View >
-                <Text>Email:</Text>
+                <Text>Email:*</Text>
                  <TextInput style = {styles_info.input}
                underlineColorAndroid = "transparent"
                
         
                autoCapitalize = "none"
                onChangeText = {this.handleEmail}/>
-            <Text>Phone number with country code:</Text>
+            <Text>Phone number with country code:*</Text>
             <TextInput style = {styles_info.input}
                underlineColorAndroid = "transparent"
                
                
                autoCapitalize = "none"
                onChangeText = {this.handlephno}/>
-               <Text>Full Name:</Text>
+               <Text>Full Name:*</Text>
                <TextInput style = {styles_info.input}
                underlineColorAndroid = "transparent"
                
                
                autoCapitalize = "none"
                onChangeText = {this.handlefull_name}/>
-               <Text>Details about products/packages you are looking for:</Text>
+               <Text>Details about products/packages you are looking for:*</Text>
                <TextInput style = {styles_info.input}
                underlineColorAndroid = "transparent"
                
