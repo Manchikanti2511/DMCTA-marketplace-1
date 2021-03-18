@@ -1,10 +1,13 @@
 import { StyleSheet } from "react-native";
+import { StatusBar } from 'react-native';
+
 
 
 const styles=StyleSheet.create({
-    View:{
-        flex:1,
-        paddingTop:50,
+    SafeAreaView:{
+        
+        backgroundColor:'#FFF',
+        marginTop: StatusBar.currentHeight,
     },
     
     title:{
@@ -15,22 +18,23 @@ const styles=StyleSheet.create({
     },
     notif:{
         
-        width:'12%', 
-        height:'7%',
+        width:50, 
+        height:50,
         marginLeft:'85%',
-        borderRadius:20,
-        backgroundColor:'#3F7D20',
+        borderRadius:20, 
+        backgroundColor:'#7BE6BB',
         justifyContent:'center',
         alignItems:'center',
     },
     search:{
         
-        width:'70%', 
-        height:'7%',
-        borderRadius:10,
+        width:300, 
+        height:50,
+        borderRadius:30,
         backgroundColor:'#F1F4F3',
-        justifyContent:'center',
-        alignItems:'flex-start',
+        padding:10,
+        
+        
         marginTop:'4%',
         marginLeft:'10%',
         marginBottom:'4%',
@@ -48,7 +52,7 @@ const styles=StyleSheet.create({
         borderRadius:10,
         backgroundColor:'#F1F4F3',
         justifyContent:'center',
-        alignItems:'flex-start',
+        alignItems:'center',
         marginLeft:'20%',
 
     },
@@ -58,7 +62,7 @@ const styles=StyleSheet.create({
         borderRadius:10,
         backgroundColor:'#F1F4F3',
         justifyContent:'center',
-        alignItems:'flex-start',
+        alignItems:'center',
         marginLeft:'5%',
 
 
